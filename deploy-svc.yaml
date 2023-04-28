@@ -37,10 +37,10 @@ metadata:
   namespace: nodejs-pipeline
 spec:
   ports:
-  - nodePort: 32333
+  - nodePort: 32334
     port: 8080
     protocol: TCP
     targetPort: 8080
   selector:
-    app: myweb
+    app: nodejs-app
   type: NodePort
